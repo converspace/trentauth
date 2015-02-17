@@ -6,7 +6,7 @@ Trentauth is a mechanism for mutual authentication (of domains, emails and phone
 
 ### Verify integrity and authencity of data published by a domain
 
-Note: Trentauth server is https only.
+Note: No HTTPS on Alice and Bob's domain. Trentauth server is HTTPS only.
 
 * Alice asks a trentauth server to verify her domain.
 * The trentauth server does a whois for the domain to retrieve the registrant email address and sends verification email.
