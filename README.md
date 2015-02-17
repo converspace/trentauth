@@ -11,8 +11,8 @@ Scenario: Alice's domain doesn't have HTTPS and Bob needs to verify that the dat
 * Alice asks a trentauth server to verify her domain.
 * The trentauth server does a whois for the domain to retrieve the registrant email address and sends verification email.
 * Alice clicks on the verification link in her email that takes her to the trentauth server and gets a secret in return.
-* Alice can now publish her trentauth server (rel=trentauth) and adds trentauth related data-* attributes to elements including an hmac created using the secret received in the previous step.
-* If Bob also trusts Alice's trentserver he can send a verification request to the trentauth server with Alice's domain name, data published on Alice's site to be authenticated (e.g., link rels) and data-* attributes associated with the data.
+* Alice can now publish her trentauth server (rel=trentauth) and adds trentauth related data-* attributes to elements (including an hmac created using the secret received in the previous step).
+* If Bob also trusts Alice's trentserver he can send a verification request to the trentauth server with Alice's domain name, data published on Alice's site to be authenticated (e.g., link rels) and data-* attributes associated with the data (including the hmac).
 
 ### Sharing secrets
 
